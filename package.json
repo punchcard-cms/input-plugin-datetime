@@ -1,0 +1,51 @@
+{
+  "name": "input-plugin-datetime",
+  "version": "0.0.1",
+  "description": "A simple plugin for a single date and time",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run nyc",
+    "pretest": "npm run lint",
+    "ava": "ava | tap-diff",
+    "ava:watch": "ava --watch | tap-diff",
+    "nyc": "nyc --all npm run ava",
+    "lint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:punchcard-cms/input-plugin-datetime.git"
+  },
+  "contributors": [
+    "Rachel White <whiter@us.ibm.com>"
+  ],
+  "license": "Apache-2",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "eslint": "2.2.0",
+    "eslint-config-punchcard": "^0.1.2",
+    "nyc": "^6.0.0",
+    "punchcard-content-types": "^0.1.0",
+    "tap-diff": "^0.1.1"
+  },
+  "engines": {
+    "node": "5.7",
+    "npm": "^3.6"
+  },
+  "keywords": [
+    "input-plugin",
+    "punchcard-cms"
+  ],
+  "nyc": {
+    "exclude": [
+      "tests/**/*"
+    ]
+  },
+  "ava": {
+    "files": [
+      "tests/*.js"
+    ],
+    "failFast": true,
+    "tap": true
+  }
+}
