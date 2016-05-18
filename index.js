@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Datetime Input Plugin
  *
