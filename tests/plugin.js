@@ -1,6 +1,6 @@
 import test from 'ava';
-import contentTypes from 'punchcard-content-types';
+import tests from 'punchcard-shared-tests';
 
 import plugin from '../';
 
-contentTypes.pluginTests(test, plugin);
+tests.plugins(test, plugin);
