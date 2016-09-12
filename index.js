@@ -27,9 +27,6 @@ module.exports = {
       label: 'Date',
       type: 'date',
       placeholder: 'Datetime',
-      settings: {
-        empty: true,
-      },
     },
     datetimeTime: {
       validation: {
@@ -39,9 +36,6 @@ module.exports = {
       label: 'Time',
       type: 'time',
       placeholder: 'Datetime',
-      settings: {
-        empty: true,
-      },
     },
   },
   html: '<label for="{{datetimeDate.id}}">{{datetimeDate.label}}</label><input type="{{datetimeDate.type}}" id="{{datetimeDate.id}}" name="{{datetimeDate.name}}" value="{{datetimeDate.value}}" placeholder="{{datetimeDate.placeholder}}" /><label for="{{datetimeTime.id}}">{{datetimeTime.label}}</label><input type="{{datetimeTime.type}}" id="{{datetimeTime.id}}" name="{{datetimeTime.name}}" value="{{datetimeTime.value}}" placeholder="{{datetimeTime.placeholder}}" />',

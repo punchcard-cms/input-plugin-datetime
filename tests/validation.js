@@ -27,11 +27,3 @@ const settings = {
 test('valid input', t => {
   t.true(validation(input, settings), 'Valid input returns true');
 });
-
-// Invalid input
-test('validate correct input', t => {
-  const ip = input;
-  ip.target.value = '';
-
-  t.is(validation(ip, settings), 'datetime cannot be left blank!', 'Return string if not valid');
-});
