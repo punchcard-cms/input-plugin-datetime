@@ -19,24 +19,15 @@ module.exports = {
     datetimeValidation: validation,
   },
   inputs: {
-    datetimeDate: {
+    datetime: {
       validation: {
         function: 'datetimeValidation',
         on: 'blur',
       },
       label: 'Date',
-      type: 'date',
-      placeholder: 'Datetime',
-    },
-    datetimeTime: {
-      validation: {
-        function: 'datetimeValidation',
-        on: 'blur',
-      },
-      label: 'Time',
-      type: 'time',
-      placeholder: 'Datetime',
+      type: 'datetime-local',
+      placeholder: new Date().toLocaleDateString(),
     },
   },
-  html: '<label for="{{datetimeDate.id}}">{{datetimeDate.label}}</label><input type="{{datetimeDate.type}}" id="{{datetimeDate.id}}" name="{{datetimeDate.name}}" value="{{datetimeDate.value}}" placeholder="{{datetimeDate.placeholder}}" /><label for="{{datetimeTime.id}}">{{datetimeTime.label}}</label><input type="{{datetimeTime.type}}" id="{{datetimeTime.id}}" name="{{datetimeTime.name}}" value="{{datetimeTime.value}}" placeholder="{{datetimeTime.placeholder}}" />',
+  html: '<label for="{{datetime.id}}">{{datetime.label}}</label><input type="{{datetime.type}}" id="{{datetime.id}}" name="{{datetime.name}}" value="{{datetime.value}}" placeholder="{{datetime.placeholder}}" />',
 };
