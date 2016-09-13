@@ -21,7 +21,9 @@
     "Rachel White <whiter@us.ibm.com>"
   ],
   "license": "Apache-2",
-  "dependencies": {},
+  "dependencies": {
+    "validator": "^5.7.0"
+  },
   "devDependencies": {
     "ava": "^0.14.0",
     "coveralls": "^2.11.9",
