@@ -22,7 +22,7 @@
   ],
   "license": "Apache-2",
   "dependencies": {
-    "validator": "^5.7.0"
+    "validator": "^6.1.0"
   },
   "devDependencies": {
     "ava": "^0.16.0",
